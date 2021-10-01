@@ -228,7 +228,7 @@ Wire Wire Line
 	6500 2700 6800 2700
 Text Label 6800 2700 2    50   ~ 0
 BTN7
-Text Notes 3450 1050 0    50   ~ 0
+Text Notes 3450 1300 0    50   ~ 0
 PCB for one row of BOTH the attack or position grid
 Wire Wire Line
 	6850 4500 7550 4500
@@ -242,7 +242,7 @@ Wire Wire Line
 	2550 4700 2950 4700
 Text Label 7550 4500 2    50   ~ 0
 MUX_OUT
-Text Notes 6200 4100 0    50   ~ 0
+Text Notes 6550 5550 0    50   ~ 0
 Note the order of these can be changed for ease of routing\njust needs to match up with esp connector (or not, we could just change\norientations/ordering in the cables)
 Text Label 7550 4600 2    50   ~ 0
 ESPselA
@@ -320,4 +320,50 @@ F 3 "~" H 6650 4700 50  0001 C CNN
 	1    6650 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61A94890
+P 9000 1000
+F 0 "H1" H 9100 1046 50  0000 L CNN
+F 1 "MountingHole" H 9100 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1000 50  0001 C CNN
+F 3 "~" H 9000 1000 50  0001 C CNN
+	1    9000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61A94CB6
+P 9000 1200
+F 0 "H2" H 9100 1246 50  0000 L CNN
+F 1 "MountingHole" H 9100 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1200 50  0001 C CNN
+F 3 "~" H 9000 1200 50  0001 C CNN
+	1    9000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61A94DFE
+P 9000 1400
+F 0 "H3" H 9100 1446 50  0000 L CNN
+F 1 "MountingHole" H 9100 1355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1400 50  0001 C CNN
+F 3 "~" H 9000 1400 50  0001 C CNN
+	1    9000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61A94FF8
+P 9000 1600
+F 0 "H4" H 9100 1646 50  0000 L CNN
+F 1 "MountingHole" H 9100 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1600 50  0001 C CNN
+F 3 "~" H 9000 1600 50  0001 C CNN
+	1    9000 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 2050 0    50   ~ 0
+Using 7/16" standoff \n(11.13mm tall, 6.35mm diam)\n** Can be changed later **
 $EndSCHEMATC
