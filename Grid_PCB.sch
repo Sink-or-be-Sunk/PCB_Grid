@@ -62,7 +62,7 @@ U 1 1 61544325
 P 3250 4650
 F 0 "U1" H 3250 5225 50  0000 C CNN
 F 1 "SN74HC151N" H 3250 5134 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3300 4650 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" H 3300 4650 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc151.pdf?ts=1632846774937&ref_url=https%253A%252F%252Fwww.google.com%252F" H 3300 4650 50  0001 C CNN
 	1    3250 4650
 	1    0    0    -1  
