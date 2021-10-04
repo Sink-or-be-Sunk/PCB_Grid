@@ -62,7 +62,7 @@ U 1 1 61544325
 P 3250 4650
 F 0 "U1" H 3250 5225 50  0000 C CNN
 F 1 "SN74HC151N" H 3250 5134 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" H 3300 4650 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 3300 4650 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc151.pdf?ts=1632846774937&ref_url=https%253A%252F%252Fwww.google.com%252F" H 3300 4650 50  0001 C CNN
 	1    3250 4650
 	1    0    0    -1  
@@ -232,9 +232,8 @@ Text Notes 3450 1300 0    50   ~ 0
 PCB for one row of BOTH the attack or position grid
 Wire Wire Line
 	6850 4500 7550 4500
-NoConn ~ 2950 4900
 Text Notes 800  5600 0    50   ~ 0
-TODO: DO WE WANT TO CONNECT STROBE TO TEST PAD FOR DEBUGGING?
+TODO: DO WE WANT TO CHANGE TEST POINT FROM SOLDER PAD TO HOOK?
 NoConn ~ 2950 4800
 Text Label 2550 4700 0    50   ~ 0
 MUX_OUT
@@ -326,44 +325,93 @@ U 1 1 61A94890
 P 9000 1000
 F 0 "H1" H 9100 1046 50  0000 L CNN
 F 1 "MountingHole" H 9100 955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1000 50  0001 C CNN
-F 3 "~" H 9000 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9000 1000 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 9000 1000 50  0001 C CNN
 	1    9000 1000
 	1    0    0    -1  
 $EndComp
+Text Notes 8650 1700 0    50   ~ 0
+Using 7/16" standoff \n(11.13mm tall, 6.35mm diam)\n** Can be changed later **
+$Comp
+L Connector:TestPoint TP1
+U 1 1 615B44CF
+P 2700 4900
+F 0 "TP1" V 2500 5000 50  0000 C CNN
+F 1 "TestPoint" V 2600 5000 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 2900 4900 50  0001 C CNN
+F 3 "~" H 2900 4900 50  0001 C CNN
+	1    2700 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4900 2950 4900
+$Comp
+L Device:R_Network08 RN1
+U 1 1 615B83C9
+P 8800 3300
+F 0 "RN1" V 9300 3200 50  0000 L CNN
+F 1 "R_Network08(10k)" V 9200 2950 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 9275 3300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8800 3300 50  0001 C CNN
+	1    8800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR051
+U 1 1 615BC30E
+P 9100 2950
+F 0 "#PWR051" H 9100 2700 50  0001 C CNN
+F 1 "GND" H 9105 2777 50  0000 C CNN
+F 2 "" H 9100 2950 50  0001 C CNN
+F 3 "" H 9100 2950 50  0001 C CNN
+	1    9100 2950
+	1    0    0    -1  
+$EndComp
+Text Label 8400 2900 0    50   ~ 0
+BTN0
+Wire Wire Line
+	8400 2900 8600 2900
+Text Label 8400 3000 0    50   ~ 0
+BTN1
+Wire Wire Line
+	8400 3000 8600 3000
+Text Label 8400 3100 0    50   ~ 0
+BTN2
+Wire Wire Line
+	8400 3100 8600 3100
+Text Label 8400 3200 0    50   ~ 0
+BTN3
+Wire Wire Line
+	8400 3200 8600 3200
+Text Label 8400 3300 0    50   ~ 0
+BTN4
+Wire Wire Line
+	8400 3300 8600 3300
+Text Label 8400 3400 0    50   ~ 0
+BTN5
+Wire Wire Line
+	8400 3400 8600 3400
+Text Label 8400 3500 0    50   ~ 0
+BTN6
+Wire Wire Line
+	8400 3500 8600 3500
+Text Label 8400 3600 0    50   ~ 0
+BTN7
+Wire Wire Line
+	8400 3600 8600 3600
+Wire Wire Line
+	9000 2900 9100 2900
+Wire Wire Line
+	9100 2900 9100 2950
 $Comp
 L Mechanical:MountingHole H2
-U 1 1 61A94CB6
-P 9000 1200
-F 0 "H2" H 9100 1246 50  0000 L CNN
-F 1 "MountingHole" H 9100 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1200 50  0001 C CNN
-F 3 "~" H 9000 1200 50  0001 C CNN
-	1    9000 1200
+U 1 1 615D2E17
+P 9000 1250
+F 0 "H2" H 9100 1296 50  0000 L CNN
+F 1 "MountingHole" H 9100 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9000 1250 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 9000 1250 50  0001 C CNN
+	1    9000 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 61A94DFE
-P 9000 1400
-F 0 "H3" H 9100 1446 50  0000 L CNN
-F 1 "MountingHole" H 9100 1355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1400 50  0001 C CNN
-F 3 "~" H 9000 1400 50  0001 C CNN
-	1    9000 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 61A94FF8
-P 9000 1600
-F 0 "H4" H 9100 1646 50  0000 L CNN
-F 1 "MountingHole" H 9100 1555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6.4mm_M6" H 9000 1600 50  0001 C CNN
-F 3 "~" H 9000 1600 50  0001 C CNN
-	1    9000 1600
-	1    0    0    -1  
-$EndComp
-Text Notes 8750 2050 0    50   ~ 0
-Using 7/16" standoff \n(11.13mm tall, 6.35mm diam)\n** Can be changed later **
 $EndSCHEMATC
