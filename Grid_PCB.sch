@@ -88,7 +88,7 @@ BTN5
 Wire Wire Line
 	3950 4500 3550 4500
 Text Label 3950 4600 2    50   ~ 0
-BTN5
+BTN6
 Wire Wire Line
 	3950 4600 3550 4600
 Text Label 3950 4700 2    50   ~ 0
@@ -231,7 +231,7 @@ BTN7
 Text Notes 3450 1300 0    50   ~ 0
 PCB for one row of BOTH the attack or position grid
 Wire Wire Line
-	6850 4500 7550 4500
+	6850 4800 7550 4800
 Text Notes 800  5600 0    50   ~ 0
 TODO: DO WE WANT TO CHANGE TEST POINT FROM SOLDER PAD TO HOOK?
 NoConn ~ 2950 4800
@@ -239,22 +239,22 @@ Text Label 2550 4700 0    50   ~ 0
 MUX_OUT
 Wire Wire Line
 	2550 4700 2950 4700
-Text Label 7550 4500 2    50   ~ 0
+Text Label 7550 4800 2    50   ~ 0
 MUX_OUT
 Text Notes 6550 5550 0    50   ~ 0
 Note the order of these can be changed for ease of routing\njust needs to match up with esp connector (or not, we could just change\norientations/ordering in the cables)
-Text Label 7550 4600 2    50   ~ 0
-ESPselA
-Text Label 7550 4800 2    50   ~ 0
-ESPselC
 Text Label 7550 4700 2    50   ~ 0
+ESPselA
+Text Label 7550 4500 2    50   ~ 0
+ESPselC
+Text Label 7550 4600 2    50   ~ 0
 ESPselB
 Wire Wire Line
-	6850 4600 7550 4600
+	6850 4500 7550 4500
 Wire Wire Line
-	7550 4700 6850 4700
+	7550 4600 6850 4600
 Wire Wire Line
-	6850 4800 7550 4800
+	6850 4700 7550 4700
 Text Label 7550 4900 2    50   ~ 0
 LED_In
 Wire Wire Line
@@ -272,11 +272,11 @@ F 3 "~" H 8850 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 4750 9750 4750
-Text Label 9750 4850 2    50   ~ 0
+Text Label 9750 4750 2    50   ~ 0
 LED_In
 Wire Wire Line
 	9050 4850 9750 4850
-Text Label 9750 4750 2    50   ~ 0
+Text Label 9750 4850 2    50   ~ 0
 LED_Out
 Wire Wire Line
 	6500 2550 7000 2550
@@ -314,7 +314,7 @@ U 1 1 6159E326
 P 6650 4700
 F 0 "J9" H 6758 5181 50  0000 C CNN
 F 1 "ESP_Conn" H 6758 5090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 6650 4700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 6650 4700 50  0001 C CNN
 F 3 "~" H 6650 4700 50  0001 C CNN
 	1    6650 4700
 	1    0    0    -1  
@@ -346,64 +346,6 @@ $EndComp
 Wire Wire Line
 	2700 4900 2950 4900
 $Comp
-L Device:R_Network08 RN1
-U 1 1 615B83C9
-P 8800 3300
-F 0 "RN1" V 9300 3200 50  0000 L CNN
-F 1 "R_Network08(10k)" V 9200 2950 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 9275 3300 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8800 3300 50  0001 C CNN
-	1    8800 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 615BC30E
-P 9100 2950
-F 0 "#PWR051" H 9100 2700 50  0001 C CNN
-F 1 "GND" H 9105 2777 50  0000 C CNN
-F 2 "" H 9100 2950 50  0001 C CNN
-F 3 "" H 9100 2950 50  0001 C CNN
-	1    9100 2950
-	1    0    0    -1  
-$EndComp
-Text Label 8400 2900 0    50   ~ 0
-BTN0
-Wire Wire Line
-	8400 2900 8600 2900
-Text Label 8400 3000 0    50   ~ 0
-BTN1
-Wire Wire Line
-	8400 3000 8600 3000
-Text Label 8400 3100 0    50   ~ 0
-BTN2
-Wire Wire Line
-	8400 3100 8600 3100
-Text Label 8400 3200 0    50   ~ 0
-BTN3
-Wire Wire Line
-	8400 3200 8600 3200
-Text Label 8400 3300 0    50   ~ 0
-BTN4
-Wire Wire Line
-	8400 3300 8600 3300
-Text Label 8400 3400 0    50   ~ 0
-BTN5
-Wire Wire Line
-	8400 3400 8600 3400
-Text Label 8400 3500 0    50   ~ 0
-BTN6
-Wire Wire Line
-	8400 3500 8600 3500
-Text Label 8400 3600 0    50   ~ 0
-BTN7
-Wire Wire Line
-	8400 3600 8600 3600
-Wire Wire Line
-	9000 2900 9100 2900
-Wire Wire Line
-	9100 2900 9100 2950
-$Comp
 L Mechanical:MountingHole H2
 U 1 1 615D2E17
 P 9000 1250
@@ -412,6 +354,28 @@ F 1 "MountingHole" H 9100 1205 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 9000 1250 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 9000 1250 50  0001 C CNN
 	1    9000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 615EB804
+P 9800 1000
+F 0 "H3" H 9900 1046 50  0000 L CNN
+F 1 "MountingHole" H 9900 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 1000 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 9800 1000 50  0001 C CNN
+	1    9800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 615EB80A
+P 9800 1250
+F 0 "H4" H 9900 1296 50  0000 L CNN
+F 1 "MountingHole" H 9900 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 1250 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 9800 1250 50  0001 C CNN
+	1    9800 1250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
