@@ -232,8 +232,8 @@ Text Notes 3450 1300 0    50   ~ 0
 PCB for one row of BOTH the attack or position grid
 Wire Wire Line
 	6850 4800 7550 4800
-Text Notes 800  5600 0    50   ~ 0
-TODO: DO WE WANT TO CHANGE TEST POINT FROM SOLDER PAD TO HOOK?
+Text Notes 3000 6500 0    50   ~ 0
+TODO: \n- change routing from around mounting holes
 NoConn ~ 2950 4800
 Text Label 2550 4700 0    50   ~ 0
 MUX_OUT
