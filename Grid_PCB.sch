@@ -56,17 +56,6 @@ Text Label 4450 1650 2    50   ~ 0
 BTN0
 Wire Wire Line
 	4150 1500 4650 1500
-$Comp
-L grid:SN74HC151N U1
-U 1 1 61544325
-P 5500 4900
-F 0 "U1" H 5500 5475 50  0000 C CNN
-F 1 "SN74HC151N" H 5500 5384 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W10.16mm" H 5550 4900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc151.pdf?ts=1632846774937&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5550 4900 50  0001 C CNN
-	1    5500 4900
-	1    0    0    -1  
-$EndComp
 Text Label 4800 4750 0    50   ~ 0
 BTN1
 Wire Wire Line
@@ -418,7 +407,6 @@ F 3 "~" H 1750 5800 50  0001 C CNN
 	1    1750 5800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5200 5150
 $Comp
 L Device:C C9
 U 1 1 61664AB9
@@ -452,4 +440,20 @@ F 3 "" H 4050 4700 50  0001 C CNN
 	1    4050 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L grid:SN74HC151N U1
+U 1 1 61544325
+P 5500 4900
+F 0 "U1" H 5500 5475 50  0000 C CNN
+F 1 "SN74HC151N" H 5500 5384 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 5550 4900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc151.pdf?ts=1632846774937&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5550 4900 50  0001 C CNN
+	1    5500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5150 5100 5150
+Wire Wire Line
+	5100 5150 5100 5250
+Connection ~ 5100 5250
 $EndSCHEMATC
