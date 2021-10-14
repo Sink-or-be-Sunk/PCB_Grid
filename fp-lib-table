@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name grid)(type KiCad)(uri ${KIPRJMOD}/grid.pretty)(options "")(descr ""))
   (lib (name Main)(type KiCad)(uri "C:/Users/molly/Desktop/Senior Year/First Semester/Senior Design/Sink or Be Sunk repo/PCB_Main/Main/Main.pretty")(options "")(descr ""))
-  (lib (name conn)(type KiCad)(uri "C:/Users/molly/Desktop/Senior Year/First Semester/Senior Design/Sink or Be Sunk repo/conn")(options "")(descr ""))
+  (lib (name conn)(type KiCad)(uri ${KIPRJMOD}/conn)(options "")(descr ""))
 )
