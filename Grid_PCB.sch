@@ -286,7 +286,7 @@ U 1 1 61A94890
 P 2750 7000
 F 0 "H1" H 2850 7046 50  0000 L CNN
 F 1 "MountingHole" H 2850 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2750 7000 50  0001 C CNN
+F 2 "grid:MountingHole_3.2mm_M3" H 2750 7000 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 2750 7000 50  0001 C CNN
 	1    2750 7000
 	1    0    0    -1  
@@ -297,7 +297,7 @@ U 1 1 615D2E17
 P 2750 7250
 F 0 "H2" H 2850 7296 50  0000 L CNN
 F 1 "MountingHole" H 2850 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2750 7250 50  0001 C CNN
+F 2 "grid:MountingHole_3.2mm_M3" H 2750 7250 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 2750 7250 50  0001 C CNN
 	1    2750 7250
 	1    0    0    -1  
@@ -308,7 +308,7 @@ U 1 1 615EB804
 P 3550 7000
 F 0 "H3" H 3650 7046 50  0000 L CNN
 F 1 "MountingHole" H 3650 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 3550 7000 50  0001 C CNN
+F 2 "grid:MountingHole_3.2mm_M3" H 3550 7000 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 3550 7000 50  0001 C CNN
 	1    3550 7000
 	1    0    0    -1  
@@ -319,7 +319,7 @@ U 1 1 615EB80A
 P 3550 7250
 F 0 "H4" H 3650 7296 50  0000 L CNN
 F 1 "MountingHole" H 3650 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 3550 7250 50  0001 C CNN
+F 2 "grid:MountingHole_3.2mm_M3" H 3550 7250 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/essentra-components/50M030050F012/11639328~" H 3550 7250 50  0001 C CNN
 	1    3550 7250
 	1    0    0    -1  
