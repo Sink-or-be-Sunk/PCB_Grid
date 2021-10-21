@@ -160,7 +160,7 @@
   )
 
   (module grid:wave_fish (layer F.Cu) (tedit 0) (tstamp 617168A9)
-    (at 224.03308 96.08566)
+    (at 223.41332 92.21724)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -274,7 +274,7 @@
   )
 
   (module grid:wave_fish (layer F.Cu) (tedit 0) (tstamp 617168A9)
-    (at 153.58872 95.5675)
+    (at 152.96896 91.69908)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -388,7 +388,7 @@
   )
 
   (module grid:wave_fish (layer F.Cu) (tedit 0) (tstamp 6171689F)
-    (at 82.79638 95.39478)
+    (at 82.17662 91.52636)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
